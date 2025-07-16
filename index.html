@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Birthday Cake</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main-content">
+    <div class="cake-container">
+      <div class="cake">
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top"></div>
+        <div class="candles">
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+        </div>
+      </div>
+    </div>
+    <h1>Happy Birthday!</h1>
+    <button id="start-button">Get Your Gift</button>
+  </div>
+
+  <audio id="happy-birthday-audio" src="happy_birthday.mp3" preload="auto"></audio>
+
+  <div id="gift" class="gift">
+    <img src="gift.jpeg" alt="Surprise Gift">
+  </div>
+
+  <div id="confetti-container" class="confetti-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
